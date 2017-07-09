@@ -23,6 +23,7 @@ hs_err_pid*
 
 .iml
 .idea
+.idea/*
 /target
 /bin
 /programmazione-java-esercizi/nbproject/private/
