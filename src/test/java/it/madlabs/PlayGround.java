@@ -6,7 +6,8 @@ package it.madlabs;
 public class PlayGround {
 
     public static void main(String[] args) {
-        String cisao;
+        String cisao = null;
         System.out.println("ciasao: "+cisao);
+        System.out.println("ciasao.length(): "+cisao.length());
     }
 }
