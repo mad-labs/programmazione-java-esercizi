@@ -57,18 +57,27 @@ public class Main {
         user3.setUserName("Torosaltellante");
         user3.setPassword("Banana123");
 
+        User[] utentiSalvati = {user1 , user2 , user3};
 
 
 
-        String userName = util.askUserName("Enter your username :");
 
-        /* Ho ragionato un po su for, ma in realtà non mi viene in mente nulla
-        per poter controllare l'username e proseguire... in ogni caso dobbiamo
-        parlarne in tempo reale, so che è colpa mia se ciò non è successo AHAHAHA :)
-        ...cmq almeno mi chiarisci dei dubbi che ho...tutto sempre quando abbiamo voglia e tempoo
-        chiaro!!!! Notte gab...o buongiornoo
-         */
+        String nomeCercato = util.askUserName("Enter your username : ");
+        for (User utenteSalvatoCorrente : utentiSalvati) {
+            if (nomeCercato.equals(utenteSalvatoCorrente.getUserName())) {
+                User utenteTrovato = new User();
+                utenteTrovato = utenteSalvatoCorrente;
+                break;
+            }
+            else {
+                System.out.println("This Username is inexistent");
+            }
 
+            }
+        String password = util.askPassword("Enter your password : ");
+        if (password.equals(this.utenteTrovato.getPassword())) {
+            System.out.println("Good");
+        }
 
 
 

@@ -38,12 +38,18 @@ public class For {
         String[] strings = {"one", "two", "tree"};
         Dog[] dogs = {new Dog(1, "Bobby"), new Dog(5, "Pluto"), new Dog(13, "Audrey")};
 
+
         for (int anInt : ints) {
             System.out.println("anInt = [" + anInt + "]");
         }
 
         for (int i = 0; i < ints.length; i++) {
             System.out.println("ints["+i+"] = [" + ints[i] + "]");
+        }
+
+        for (Dog dog : dogs) {
+            System.out.println("Dog" + dog.getName() + " is " + dog.getName() + " years old." );
+
         }
 
         //Fai lo stesso con gli altri array, stampando tutte le strings e tutti i cani, in questo modo: "Dog Pluto is 5 years old"

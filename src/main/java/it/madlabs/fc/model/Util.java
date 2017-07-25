@@ -15,4 +15,10 @@ public class Util {
         System.out.println("< ");
         return scanner.nextLine();
     }
+
+    public String askPassword(String message) {
+        System.out.println("> " + message);
+        System.out.println("< ");
+        return scanner.nextLine();
+    }
 }
